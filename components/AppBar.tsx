@@ -52,8 +52,7 @@ const StyledAppBar = styled.header`
     
                 &:hover, &:focus {
                     &::after {
-                    transform: scaleX(1);
-    
+                        transform: scaleX(1);
                     }
                 }
             }
@@ -72,15 +71,15 @@ export default function Appbar() {
                     </li>
 
                     <li>
-                        <Link href={'/'}>Sobre ser Front-end</Link>
+                        <Link href={'/#about-me'}>Sobre mim</Link>
                     </li>
 
                     <li>
-                        <Link href={'/'}>Sobre mim</Link>
+                        <Link href={'/#about-frontend'}>Sobre ser Front-end</Link>
                     </li>
 
                     <li>
-                        <Link href={'/'}>Contato</Link>
+                        <Link href={'/#contact'}>Contato</Link>
                     </li>
                 </ul>
             </nav>

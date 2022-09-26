@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 
-const StyledWrapper = styled.a`
+const StyledWrapper = styled.a.attrs((props: { hasMargin: boolean }) => ({
+    hasMargin: props.hasMargin
+}))`
     display: grid;
     place-items: center;
-    margin-top: 6%;
-    margin-bottom: 6%;
+    margin-top: ${props => props.hasMargin ? '6%' : '3%'};
+    margin-bottom: ${props => props.hasMargin ? '6%' : '2%'};
 
     img {
         @keyframes up-and-down {
@@ -30,11 +32,16 @@ const StyledWrapper = styled.a`
     }
 `;
 
-export default function ArrowDown() {
+type ArrowDownType = {
+    to: string,
+    hasMargin?: boolean
+}
+
+export default function ArrowDown({ to, hasMargin }: ArrowDownType) {
     return (
-        <StyledWrapper>
-            <Link href={'/#about-me'} className='a'>
-               {/* eslint-disable-next-line @next/next/no-img-element */}
+        <StyledWrapper hasMargin={hasMargin}>
+            <Link href={to} className='a'>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src='/ArrowDown.png' alt='ir para baixo' />
             </Link>
         </StyledWrapper>

@@ -1,13 +1,6 @@
-import Image from 'next/image';
 import styled from 'styled-components';
+import ArrowDown from './ArrowDown';
 import { Section } from './IndexMain';
-
-const StyledWrapper = styled.div`
-    h1 {
-        font-weight: 500;
-        font-size: 1.5rem;
-    }
-`;
 
 const ContentWrapper = styled.div`
     display: flex;
@@ -47,39 +40,37 @@ const ContentWrapper = styled.div`
 export default function AboutMe() {
     return (
         <Section hasPadding id='about-me'>
-            <StyledWrapper>
-                <h1>Sobre mim</h1>
 
-                <ContentWrapper>
-                    <div className='me_card'>
-                        
+            <h1>Sobre mim</h1>
 
-                        <ul>
-                            <li>
-                                Nome: João Pedro
-                            </li>
+            <ContentWrapper>
+                <div className='me_card'>
 
-                            <li>
-                                Idade: 24 anos
-                            </li>
 
-                            <li>
-                                Cidade: Rio de Janeiro - RJ
-                            </li>
-                        </ul>
-                    </div>
+                    <ul>
+                        <li>
+                            Nome: João Pedro
+                        </li>
 
-                    <div className='more-about-me'>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus labore cumque repudiandae alias dolorum nihil unde,
-                            perspiciatis culpa in. Nesciunt aperiam sunt est perferendis cum expedita, eos distinctio voluptate fuga.
-                        </p>
+                        <li>
+                            Idade: 24 anos
+                        </li>
 
-                    </div>
-                </ContentWrapper>
+                        <li>
+                            Cidade: Rio de Janeiro - RJ
+                        </li>
+                    </ul>
+                </div>
 
-            </StyledWrapper>
+                <div className='more-about-me'>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus labore cumque repudiandae alias dolorum nihil unde,
+                        perspiciatis culpa in. Nesciunt aperiam sunt est perferendis cum expedita, eos distinctio voluptate fuga.
+                    </p>
 
+                </div>
+            </ContentWrapper>
+            <ArrowDown to='#about-frontend' hasMargin />
         </Section>
     )
 }

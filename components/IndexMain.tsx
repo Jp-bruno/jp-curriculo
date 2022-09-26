@@ -1,40 +1,36 @@
 import styled from 'styled-components';
-import ArrowDown from './ArrowDown';
-import BannerContainer from './BannerContainer';
 import AboutMe from './AboutMe';
 import AboutFrontEnd from './AboutFrontEnd';
+import Banner from './Banner';
 
 const StyledMain = styled.main`
     display: flex;
     flex-direction: column;
+
 `;
 
-// const Section = styled.section`
-//     margin-top: 100px;
-//     height: calc(100vh - 100px);
-//     padding
-// `
-
-export const Section = styled.section.attrs((props: any) => ({
+export const Section = styled.section.attrs((props: { hasPadding: boolean }) => ({
     hasPadding: props.hasPadding
 }))`
+    h1 {
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    display: flex;
+    flex-direction: column;
+    scroll-margin-top: 15vh;
     margin-top: 100px;
     min-height: calc(100vh - 100px);
-    padding: ${props => props.hasPadding ? '100px' : '0'};
+    padding: ${props => props.hasPadding ? '20px 100px' : '0'};
 `
 
 export default function IndexMain() {
     return (
         <StyledMain>
-            <Section>
-                <BannerContainer />
-                <ArrowDown />
-            </Section>
-
+            <Banner />
             <AboutMe />
-
             <AboutFrontEnd />
-
         </StyledMain>
     )
 }
