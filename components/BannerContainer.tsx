@@ -90,7 +90,7 @@ const StyledContentHolder = styled.div`
     }
 `;
 
-export default function BannerContainer({ children }: PropsWithChildren) {
+export default function BannerContainer() {
     return (
         <StyledContainer>
             <StyledContentHolder>
@@ -99,6 +99,18 @@ export default function BannerContainer({ children }: PropsWithChildren) {
                     <li>
                         <button data-name='JavaScript'>
                             <Image src='/icons8-javascript-48.png' alt='JavaScript' width={48} height={48} layout={'intrinsic'} />
+                        </button>
+                    </li>
+
+                    <li>
+                        <button data-name='CSS3'>
+                            <Image src='/icons8-css3-48.png' alt='CSS3' width={48} height={48} layout={'intrinsic'} />
+                        </button>
+                    </li>
+
+                    <li>
+                        <button data-name='HTML5'>
+                            <Image src='/icons8-html-5-400.png' alt='CSS3' width={48} height={48} layout={'intrinsic'} />
                         </button>
                     </li>
 
@@ -117,12 +129,6 @@ export default function BannerContainer({ children }: PropsWithChildren) {
                     <li>
                         <button data-name='NodeJS'>
                             <Image src='/icons8-node-js-48.png' alt='NodeJS' width={48} height={48} layout={'intrinsic'} />
-                        </button>
-                    </li>
-
-                    <li>
-                        <button data-name='CSS3'>
-                            <Image src='/icons8-css3-48.png' alt='CSS3' width={48} height={48} layout={'intrinsic'} />
                         </button>
                     </li>
 

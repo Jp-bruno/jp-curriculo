@@ -11,6 +11,7 @@ const StyledAppBar = styled.header`
     color: white;
     display: flex;
     align-items: center;
+    background-color: #111;
 
     nav {
         width: 100%;

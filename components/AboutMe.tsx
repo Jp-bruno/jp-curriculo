@@ -13,7 +13,7 @@ const ContentWrapper = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: center;
-        border-radius: 6px;
+        border: dashed 1px #ffffff90;
         background: #222;
 
         .profile_pic {
@@ -31,8 +31,8 @@ const ContentWrapper = styled.div`
 
     .more-about-me {
         flex-basis: 300%;
-        border-radius: 7px;
         background: #222;
+        border: dashed 1px #ffffff90;
         padding: 20px 30px;
     }
 `
