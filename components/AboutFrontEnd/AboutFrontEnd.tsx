@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Section } from '../IndexMain';
 import Section1 from './Section1';
 import Section2 from './Section2';
+import Section3 from './Section3';
 
 const StyledContainer = styled.div`
     background-color: #222;
@@ -31,6 +32,10 @@ export default function AboutFrontEnd() {
 
             <StyledContainer>
                 <Section2 />
+            </StyledContainer>
+            
+            <StyledContainer>
+                <Section3 />
             </StyledContainer>
         </Section>
     )

@@ -17,7 +17,6 @@ const Section2Styles = styled.div`
                 content: attr(data-tech);
                 position: absolute;
                 padding: 20px 40px;
-                z-index: 10;
                 transform: translateY(190%);
             }
         }

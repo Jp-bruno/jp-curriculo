@@ -6,7 +6,7 @@ const StyledAppBar = styled.header`
     padding: 22px 100px;
     position: fixed;
     background: black;
-    z-index: 3;
+    z-index: 10;
     width: 100%;
     color: white;
     display: flex;
@@ -77,6 +77,10 @@ export default function Appbar() {
 
                     <li>
                         <Link href={'/#about-frontend'}>Sobre ser Front-end</Link>
+                    </li>
+
+                    <li>
+                        <Link href={'/#about-frontend'}>Meus projetos</Link>
                     </li>
 
                     <li>
