@@ -3,7 +3,7 @@ import TagIcon from './TagIcon';
 import Image from 'next/image';
 
 const FooterStyle = styled.footer`
-    background: black;
+    background: #11111170;
     padding: 50px 100px;
     display: flex;
     justify-content: space-between;
