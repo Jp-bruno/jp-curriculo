@@ -7,7 +7,7 @@ export default function Banner() {
     return (
         <Section>
             <BannerContainer />
-            <ArrowDown to={'/#about-me'} hasMargin />
+            <ArrowDown to={'/#about-me'} />
         </Section>
     )
 }
