@@ -54,7 +54,7 @@ export default function Section1() {
             </blockquote>
 
             <p>
-                O front-end é o profissional que irá escrever o código que representa a estrutura não só visual como também semântica da página web, dando vida ao design
+                O front-end é o profissional que irá escrever o código que representa a estrutura não só visual, estética, como também semântica da página web, dando vida ao design
                 feito pela equipe de UX/UI tornando-o interativo e funcional.
             </p>
         </Section1Styles>
