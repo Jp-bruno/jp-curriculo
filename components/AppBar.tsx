@@ -80,7 +80,7 @@ export default function Appbar() {
                     </li>
 
                     <li>
-                        <Link href={'/#about-frontend'}>Meus projetos</Link>
+                        <Link href={'/#projects'}>Meus projetos</Link>
                     </li>
 
                     <li>

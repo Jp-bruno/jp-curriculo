@@ -7,6 +7,10 @@ const ContentWrapper = styled.div`
     display: flex;
     column-gap: 20px;
 
+    p:first-letter {
+        margin-left: 2rem;
+    }
+
     .me_card {
         flex-basis: 100%;
         padding: 20px;
@@ -44,10 +48,6 @@ const ContentWrapper = styled.div`
             text-align: justify;
             font-size: 18px;
             color: rgba(255,255,255,0.8);
-        }
-
-        p:first-letter {
-            margin-left: 2rem;
         }
 
         ul {

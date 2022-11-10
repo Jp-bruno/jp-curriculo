@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import ArrowDown from '../ArrowDown';
 import { Section } from '../IndexMain';
 import Section1 from './Section1';
 import Section2 from './Section2';
@@ -12,6 +13,10 @@ const StyledContainer = styled.div`
     padding: 30px 40px 30px;
     border: dashed 1px #ffffffaa;
     margin-bottom: 100px;
+
+    p:first-letter {
+        margin-left: 1rem;
+    }
 
     h3 {
         border-bottom: solid 1px #ffffffaa;
@@ -37,6 +42,8 @@ export default function AboutFrontEnd() {
             <StyledContainer>
                 <Section3 />
             </StyledContainer>
+            
+            <ArrowDown to='#projects' />
         </Section>
     )
 }

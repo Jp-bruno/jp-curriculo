@@ -1,6 +1,6 @@
-import { Section } from "./IndexMain";
+import { Section } from "../IndexMain";
 import BannerContainer from "./BannerContainer";;
-import ArrowDown from "./ArrowDown";
+import ArrowDown from "../ArrowDown";
 
 
 export default function Banner() {

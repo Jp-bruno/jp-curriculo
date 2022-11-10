@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import AboutMe from './AboutMe';
 import AboutFrontEnd from './AboutFrontEnd/AboutFrontEnd';
-import Banner from './Banner';
+import Banner from './Banner/Banner';
+import Projects from './Projects/Projects';
 
 const StyledMain = styled.main`
     display: flex;
@@ -26,6 +27,7 @@ export default function IndexMain() {
             <Banner />
             <AboutMe />
             <AboutFrontEnd />
+            <Projects />
         </StyledMain>
     )
 }
