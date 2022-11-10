@@ -13,7 +13,6 @@ const ContentWrapper = styled.div`
         column-gap: 60px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         border: dashed 1px #ffffff90;
         background: #222;
 
@@ -25,11 +24,11 @@ const ContentWrapper = styled.div`
         }
 
         ul {
-            width: fit-content;
             display: flex;
             flex-direction: column;
             row-gap: 15px;
             padding: 10px 0;
+            text-align: center;
         }
     }
 
@@ -39,10 +38,21 @@ const ContentWrapper = styled.div`
         border: dashed 1px #ffffff90;
         padding: 20px 30px;
         letter-spacing: .1rem;
-        line-height: 2ch;
+        line-height: 2.7ch;
+        
+        p {
+            text-align: justify;
+            font-size: 18px;
+            color: rgba(255,255,255,0.8);
+        }
+
+        p:first-letter {
+            margin-left: 2rem;
+        }
 
         ul {
-            list-style-type: auto;
+            list-style-type: circle;
+            padding: 0 20px;
 
             li {
                 margin-top: 20px;
@@ -65,15 +75,15 @@ export default function AboutMe() {
 
                     <ul>
                         <li>
-                            Nome: João Pedro
+                            João Pedro
                         </li>
 
                         <li>
-                            Idade: 24 anos
+                            24 anos
                         </li>
 
                         <li>
-                            Cidade: Rio de Janeiro - RJ
+                            Rio de Janeiro - RJ
                         </li>
                     </ul>
                 </div>
@@ -89,7 +99,7 @@ export default function AboutMe() {
                     <p>
                         Nasci e cresci na zona norte do Rio de Janeiro. Durante esse processo de amadurecimento tive muitos desafios e espectativas quanto
                         ao meu futuro. Desde os meus 14 anos eu já queria muito um trabalho, queria ter a sensação de ter algo meu, conquistado com o meu esforço,
-                        mas meus pais não me apoiaram em arrumar um trabalho tão cedo e me orientaram a focar nos estudos, e como solução para as duas partes me colocaram
+                        mas meus pais não me apoiaram em arrumar um trabalho tão cedo e me orientaram a focar nos estudos e, como solução para as duas partes, me colocaram
                         em um colégio com cursos técnicos em várias áreas de profissão. A minha área de escolha na época foi Química porque sempre fui curioso, queria saber
                         como as coisas são feitas, por que se comportam do jeito que se comportam e etc, eu adorava questionamentos e reflexões filosóficas sobre o universo e química
                         era exatamente o que eu procurava porque não se mantinha apenas no mundo das ideias, as aulas práticas em laboratório eram difíceis mas incríveis, observar 
@@ -108,7 +118,7 @@ export default function AboutMe() {
 
                     <ul>
                         <li>
-                            DJ/Técnico de som - Eu era responsável por tocar música quando não tivesse nenhum artista se apresentando, e quando tivesse
+                            DJ/Técnico de som - Eu era responsável por tocar música quando nenhum artista estivesse se apresentando, e quando tivesse
                             eu tinha que montar o palco, microfonar os instrumentos, ligar tudo na mesa de som e fazer a mixagem, além de receber
                             os músicos e prestar assistência à eles. Foi um trabalho divertido.
                         </li>

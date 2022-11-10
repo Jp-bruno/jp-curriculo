@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { PropsWithChildren, useEffect } from 'react';
+import { useEffect } from 'react';
 import styled from 'styled-components';
 
 const StyledContainer = styled.div`
@@ -85,7 +85,6 @@ const StyledContentHolder = styled.div`
         li {
             button {
                 background: 0;
-                cursor: pointer;
                 position: relative;
                 border: 0;
                 
@@ -121,7 +120,7 @@ const StyledContentHolder = styled.div`
 
 export default function BannerContainer() {
     function writeOnTitle(string: string) {
-        return new Promise<void>((resolve, reject) => {
+        return new Promise<void>((resolve) => {
             const textoArray = Array.from(string);
             const bannerTitle = document.querySelector('#banner-title') as HTMLHeadingElement;
 
@@ -142,7 +141,7 @@ export default function BannerContainer() {
     }
 
     function eraseTitle() {
-        return new Promise<void>((resolve, reject) => {
+        return new Promise<void>((resolve) => {
             const bannerTitle = document.querySelector('#banner-title') as HTMLHeadingElement;
             let bannerTitleText = bannerTitle.textContent as string;
 
