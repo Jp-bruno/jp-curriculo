@@ -118,7 +118,7 @@ const StyledContentHolder = styled.div`
     }
 `;
 
-export default function BannerContainer() {
+export default function Section1() {
     function writeOnTitle(string: string) {
         return new Promise<void>((resolve) => {
             const textoArray = Array.from(string);
